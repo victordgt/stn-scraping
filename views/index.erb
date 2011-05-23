@@ -1,0 +1,31 @@
+<html>
+	
+<head>
+<title> de Participações dos Estados</title>	
+</head>	
+<body>
+<img src='<%= Gchart.bar(
+	:data => [
+	@dados[0],
+	@dados[1],
+	@dados[2],
+	@dados[3],
+	@dados[4],
+	@dados[5],
+	@dados[6],
+	@dados[7],
+	@dados[8],
+	@dados[9],
+	@dados[10],
+	@dados[11]],
+	:bar_colors => ["4D89F9","008000"],
+	:title => "Fundo de Participação dos Estados",
+	:chart_background => "CCCCCC",
+	:stacked => false,
+	:size => "600x200",
+	:font_size => 10,
+	:axis_with_labels => ['x,y'],
+	:axis_labels => ["Jan|Fev|Mar|Abr|Mai|Jun|Jul|Ago|Set|Out|Nov|Dez"]) 
+%>' />
+</body>
+</html>

@@ -1,0 +1,17 @@
+
+
+#COMMIT no git
+git add .
+git commit -m "Comentário"
+
+#GITHUB PARA USUÁRIO COM CHAVE ARMAZENADA NO DIRETÓRIO .ssh
+git config -global user.name usuariogithub
+git config -global user.mail emailusuariogithub
+
+#ENVIAR PARA O GITHUB
+git push -u origin master
+
+#FAZER O DEPLOY NO HEROKU
+git push heroku master
+
+
