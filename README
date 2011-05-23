@@ -1,5 +1,3 @@
-
-
 #COMMIT no git
 git add .
 git commit -m "Comentário"
@@ -14,4 +12,21 @@ git push -u origin master
 #FAZER O DEPLOY NO HEROKU
 git push heroku master
 
+#INSTALAR GEMS
+gem install nokogiri
+gem install sinatra
+gem install json
+gem install googlecharts
+gem install heroku
 
+#EXECUTAR A APLICAÇÃO DO SINATRA
+ruby -rubygems application.rb
+
+#LOGIN NO HEROKU
+heroku login
+
+#ADICIONAR CHAVES ARMAZENADAS NO DIRETÓRIO SSH
+heroku keys:add
+
+#ADICIONAR APLICAÇÃO NO HEROKU
+git remote add heroku git@heroku.com:stn-scraping.git
