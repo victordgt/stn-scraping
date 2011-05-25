@@ -1,31 +1,51 @@
 <html>
-	
-<head>
-<title> de Participações dos Estados</title>	
-</head>	
-<body>
-<img src='<%= Gchart.bar(
-	:data => [
-	@dados[0],
-	@dados[1],
-	@dados[2],
-	@dados[3],
-	@dados[4],
-	@dados[5],
-	@dados[6],
-	@dados[7],
-	@dados[8],
-	@dados[9],
-	@dados[10],
-	@dados[11]],
-	:bar_colors => ["4D89F9","008000"],
-	:title => "Fundo de Participação dos Estados",
-	:chart_background => "CCCCCC",
-	:stacked => false,
-	:size => "600x200",
-	:font_size => 10,
-	:axis_with_labels => ['x,y'],
-	:axis_labels => ["Jan|Fev|Mar|Abr|Mai|Jun|Jul|Ago|Set|Out|Nov|Dez"]) 
-%>' />
-</body>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Ano');
+        data.addColumn('number', 'Valor Mensal');
+
+        data.addRows(12);
+        data.setValue(0, 0, 'Jan');
+        data.setValue(0, 1, <%=@dados[:JAN]%>);
+        data.setValue(1, 0, 'Fev');
+        data.setValue(1, 1, <%=@dados[:FEV]%>);
+        data.setValue(2, 0, 'Mar');
+        data.setValue(2, 1, <%=@dados[:MAR]%>);
+        data.setValue(3, 0, 'Abr');
+        data.setValue(3, 1, <%=@dados[:ABR]%>);
+        data.setValue(4, 0, 'Mai');
+        data.setValue(4, 1, <%=@dados[:MAI]%>);
+        data.setValue(5, 0, 'Jun');
+        data.setValue(5, 1, <%=@dados[:JUN]%>);
+        data.setValue(6, 0, 'Jul');
+        data.setValue(6, 1, <%=@dados[:JUL]%>);
+        data.setValue(7, 0, 'Ago');
+        data.setValue(7, 1, <%=@dados[:AGO]%>);
+        data.setValue(8, 0, 'Set');
+        data.setValue(8, 1, <%=@dados[:SET]%>);
+        data.setValue(9, 0, 'Out');
+        data.setValue(9, 1, <%=@dados[:OUT]%>);
+        data.setValue(10, 0, 'Nov');
+        data.setValue(10, 1, <%=@dados[:NOV]%>);
+        data.setValue(11, 0, 'Dez');
+        data.setValue(11, 1, <%=@dados[:DEZ]%>);
+
+
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+        chart.draw(data, {width: 800, height: 500, title: 'Fundo de Participação dos Estados',
+                          hAxis: {title: 'Ano', titleTextStyle: {color: 'blue'}}
+                         });
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="chart_div"></div>
+  </body>
 </html>
