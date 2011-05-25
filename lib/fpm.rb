@@ -18,7 +18,7 @@ class FPM
         numeros << numero
       end
     end  
-    array_meses(numeros) 
+    util.array_meses(numeros) 
   end
   
 end
