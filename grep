@@ -1,0 +1,100 @@
+2011-06-07T06:22:00+00:00 app[web.1]: 187.104.208.31 - - [06/Jun/2011 23:22:00] "GET /js/jquery-1.6.1.js HTTP/1.1" 200 234995 0.0005
+2011-06-07T06:22:00+00:00 heroku[router]: GET stn-scraping.heroku.com/js/jquery-1.6.1.js dyno=web.1 queue=0 wait=0ms service=16ms bytes=235237
+2011-06-07T06:22:00+00:00 app[web.1]: 187.104.208.31 - - [06/Jun/2011 23:22:00] "GET /favicon.ico HTTP/1.0" 404 18 0.0004
+2011-06-07T06:22:00+00:00 heroku[router]: GET stn-scraping.heroku.com/favicon.ico dyno=web.1 queue=0 wait=0ms service=4ms bytes=18
+2011-06-06T23:22:00-07:00 heroku[nginx]: GET /js/jquery-1.6.1.js HTTP/1.1 | 187.104.208.31 | 198 | http | 304
+2011-06-06T23:22:00-07:00 heroku[nginx]: GET /favicon.ico HTTP/1.1 | 187.104.208.31 | 251 | http | 404
+2011-06-07T06:22:08+00:00 app[web.1]: 187.104.208.31 - - [06/Jun/2011 23:22:08] "GET /js/jqBarGraph.1.1.js HTTP/1.1" 200 9249 0.0005
+2011-06-07T06:22:08+00:00 heroku[router]: GET stn-scraping.heroku.com/js/jqBarGraph.1.1.js dyno=web.1 queue=0 wait=0ms service=6ms bytes=9489
+2011-06-07T06:22:09+00:00 app[web.1]: 187.104.208.31 - - [06/Jun/2011 23:22:09] "GET /favicon.ico HTTP/1.1" 404 18 0.0005
+2011-06-07T06:22:09+00:00 heroku[router]: GET stn-scraping.heroku.com/favicon.ico dyno=web.1 queue=0 wait=0ms service=1ms bytes=18
+2011-06-06T23:22:09-07:00 heroku[nginx]: GET /js/jqBarGraph.1.1.js HTTP/1.1 | 187.104.208.31 | 198 | http | 304
+2011-06-06T23:22:09-07:00 heroku[nginx]: GET /favicon.ico HTTP/1.1 | 187.104.208.31 | 251 | http | 404
+2011-06-07T06:22:47+00:00 app[web.1]: 187.104.208.31 - - [06/Jun/2011 23:22:47] "GET /fpe/get?uf=DF&ano=2010&json=false HTTP/1.1" 200 573 1.8910
+2011-06-07T06:22:47+00:00 heroku[router]: GET stn-scraping.heroku.com/fpe/get dyno=web.1 queue=0 wait=0ms service=1893ms bytes=573
+2011-06-07T06:22:47+00:00 app[web.1]: 187.104.208.31 - - [06/Jun/2011 23:22:47] "GET /favicon.ico HTTP/1.0" 404 18 0.0008
+2011-06-07T06:22:47+00:00 heroku[router]: GET stn-scraping.heroku.com/favicon.ico dyno=web.1 queue=0 wait=0ms service=1ms bytes=221
+2011-06-06T23:22:48-07:00 heroku[nginx]: GET /favicon.ico HTTP/1.1 | 187.104.208.31 | 251 | http | 404
+2011-06-07T06:23:00+00:00 app[web.1]: 187.104.208.31 - - [06/Jun/2011 23:23:00] "GET /fpe/get?uf=DF&ano=2010&json=true HTTP/1.1" 200 275 1.0629
+2011-06-07T06:23:00+00:00 heroku[router]: GET stn-scraping.heroku.com/fpe/get dyno=web.1 queue=0 wait=0ms service=1065ms bytes=275
+2011-06-07T06:23:00+00:00 app[web.1]: 187.104.208.31 - - [06/Jun/2011 23:23:00] "GET /favicon.ico HTTP/1.0" 404 18 0.0005
+2011-06-07T06:23:00+00:00 heroku[router]: GET stn-scraping.heroku.com/favicon.ico dyno=web.1 queue=0 wait=0ms service=1ms bytes=221
+2011-06-06T23:23:00-07:00 heroku[nginx]: GET /favicon.ico HTTP/1.1 | 187.104.208.31 | 251 | http | 404
+2011-06-07T06:24:22+00:00 app[web.1]: 187.104.208.31 - - [06/Jun/2011 23:24:22] "GET / HTTP/1.1" 200 3257 0.0007
+2011-06-07T06:24:22+00:00 heroku[router]: GET stn-scraping.heroku.com/ dyno=web.1 queue=0 wait=0ms service=5ms bytes=3257
+2011-06-07T06:24:22+00:00 app[web.1]: 187.104.208.31 - - [06/Jun/2011 23:24:22] "GET /js/jqBarGraph.1.1.js HTTP/1.1" 200 9249 0.0006
+2011-06-07T06:24:22+00:00 heroku[router]: GET stn-scraping.heroku.com/js/jqBarGraph.1.1.js dyno=web.1 queue=0 wait=0ms service=2ms bytes=9249
+2011-06-07T06:24:22+00:00 app[web.1]: 187.104.208.31 - - [06/Jun/2011 23:24:22] "GET /css/stn.css HTTP/1.1" 200 172 0.0003
+2011-06-07T06:24:22+00:00 heroku[router]: GET stn-scraping.heroku.com/css/stn.css dyno=web.1 queue=0 wait=0ms service=1ms bytes=397
+2011-06-07T06:24:22+00:00 app[web.1]: 187.104.208.31 - - [06/Jun/2011 23:24:22] "GET /js/jquery-1.6.1.js HTTP/1.1" 200 234995 0.0003
+2011-06-07T06:24:22+00:00 app[web.1]: 187.104.208.31 - - [06/Jun/2011 23:24:22] "GET /js/stn.js HTTP/1.1" 200 786 0.0003
+2011-06-07T06:24:22+00:00 heroku[router]: GET stn-scraping.heroku.com/js/stn.js dyno=web.1 queue=0 wait=0ms service=1ms bytes=1025
+2011-06-07T06:24:22+00:00 heroku[router]: GET stn-scraping.heroku.com/js/jquery-1.6.1.js dyno=web.1 queue=1 wait=1ms service=9ms bytes=235237
+2011-06-07T06:24:23+00:00 heroku[router]: GET stn-scraping.heroku.com/favicon.ico dyno=web.1 queue=0 wait=0ms service=3ms bytes=18
+2011-06-07T06:24:23+00:00 app[web.1]: 187.104.208.31 - - [06/Jun/2011 23:24:23] "GET /favicon.ico HTTP/1.0" 404 18 0.0005
+2011-06-07T06:24:26+00:00 app[web.1]: 187.104.208.31 - - [06/Jun/2011 23:24:26] "GET /favicon.ico HTTP/1.1" 404 18 0.0006
+2011-06-07T06:24:26+00:00 heroku[router]: GET stn-scraping.heroku.com/favicon.ico dyno=web.1 queue=0 wait=0ms service=1ms bytes=221
+2011-06-06T23:24:27-07:00 heroku[nginx]: GET /favicon.ico HTTP/1.1 | 187.104.208.31 | 252 | http | 404
+2011-06-06T23:30:45-07:00 heroku[slugc]: Slug compilation started
+2011-06-07T06:30:49+00:00 heroku[api]: Deploy 31243e6 by victordgt@gmail.com
+2011-06-07T06:30:49+00:00 heroku[api]: Release v11 created by victordgt@gmail.com
+2011-06-07T06:30:49+00:00 heroku[web.1]: State changed from up to bouncing
+2011-06-07T06:30:49+00:00 heroku[web.1]: State changed from created to starting
+2011-06-06T23:30:50-07:00 heroku[slugc]: Slug compilation finished
+2011-06-07T06:30:51+00:00 heroku[web.1]: Starting process with command: `thin -p 54568 -e production -R /home/heroku_rack/heroku.ru start`
+2011-06-07T06:30:52+00:00 app[web.1]: >> Thin web server (v1.2.6 codename Crazy Delicious)
+2011-06-07T06:30:52+00:00 app[web.1]: >> Maximum connections set to 1024
+2011-06-07T06:30:52+00:00 app[web.1]: >> Listening on 0.0.0.0:54568, CTRL+C to stop
+2011-06-07T06:30:55+00:00 heroku[web.1]: State changed from starting to up
+2011-06-07T06:31:14+00:00 heroku[web.1]: Stopping process with SIGTERM
+2011-06-07T06:31:14+00:00 app[web.1]: >> Stopping ...
+2011-06-07T06:31:14+00:00 heroku[web.1]: Process exited
+2011-06-07T06:33:39+00:00 heroku[router]: GET stn-scraping.heroku.com/ dyno=web.1 queue=0 wait=0ms service=9ms bytes=3257
+2011-06-07T06:33:39+00:00 app[web.1]: 187.104.208.31 - - [06/Jun/2011 23:33:39] "GET / HTTP/1.1" 200 3257 0.0059
+2011-06-07T06:33:39+00:00 app[web.1]: 187.104.208.31 - - [06/Jun/2011 23:33:39] "GET /css/stn.css HTTP/1.1" 200 172 0.0005
+2011-06-07T06:33:39+00:00 heroku[router]: GET stn-scraping.heroku.com/css/stn.css dyno=web.1 queue=0 wait=0ms service=2ms bytes=397
+2011-06-07T06:33:39+00:00 app[web.1]: 187.104.208.31 - - [06/Jun/2011 23:33:39] "GET /js/jqBarGraph.1.1.js HTTP/1.1" 200 9249 0.0003
+2011-06-07T06:33:39+00:00 heroku[router]: GET stn-scraping.heroku.com/js/jqBarGraph.1.1.js dyno=web.1 queue=0 wait=0ms service=1ms bytes=9489
+2011-06-07T06:33:39+00:00 app[web.1]: 187.104.208.31 - - [06/Jun/2011 23:33:39] "GET /js/jquery-1.6.1.js HTTP/1.1" 200 234995 0.0004
+2011-06-07T06:33:39+00:00 app[web.1]: 187.104.208.31 - - [06/Jun/2011 23:33:39] "GET /js/stn.js HTTP/1.1" 200 786 0.0003
+2011-06-07T06:33:39+00:00 heroku[router]: GET stn-scraping.heroku.com/js/stn.js dyno=web.1 queue=0 wait=0ms service=1ms bytes=786
+2011-06-07T06:33:39+00:00 heroku[router]: GET stn-scraping.heroku.com/js/jquery-1.6.1.js dyno=web.1 queue=0 wait=0ms service=15ms bytes=235237
+2011-06-06T23:33:40-07:00 heroku[nginx]: GET / HTTP/1.1 | 187.104.208.31 | 1266 | http | 200
+2011-06-06T23:33:40-07:00 heroku[nginx]: GET /css/stn.css HTTP/1.1 | 187.104.208.31 | 427 | http | 200
+2011-06-07T06:33:41+00:00 app[web.1]: 187.104.208.31 - - [06/Jun/2011 23:33:41] "GET /favicon.ico HTTP/1.1" 404 18 0.0005
+2011-06-07T06:33:41+00:00 heroku[router]: GET stn-scraping.heroku.com/favicon.ico dyno=web.1 queue=0 wait=0ms service=1ms bytes=221
+2011-06-07T06:33:57+00:00 app[web.1]: 125.17.149.142 - - [06/Jun/2011 23:33:57] "GET / HTTP/1.1" 200 3257 0.0011
+2011-06-07T06:33:57+00:00 heroku[router]: GET stn-scraping.heroku.com/ dyno=web.1 queue=0 wait=0ms service=5ms bytes=3257
+2011-06-06T23:33:58-07:00 heroku[nginx]: GET / HTTP/1.1 | 125.17.149.142 | 1265 | http | 200
+2011-06-07T06:33:58+00:00 app[web.1]: 125.17.149.142 - - [06/Jun/2011 23:33:58] "GET /css/stn.css HTTP/1.1" 200 172 0.0005
+2011-06-07T06:33:58+00:00 heroku[router]: GET stn-scraping.heroku.com/css/stn.css dyno=web.1 queue=0 wait=0ms service=2ms bytes=172
+2011-06-07T06:33:58+00:00 app[web.1]: 125.17.149.142 - - [06/Jun/2011 23:33:58] "GET /js/stn.js HTTP/1.1" 200 786 0.0004
+2011-06-07T06:33:58+00:00 app[web.1]: 125.17.149.142 - - [06/Jun/2011 23:33:58] "GET /js/jquery-1.6.1.js HTTP/1.0" 200 234995 0.0004
+2011-06-07T06:33:58+00:00 app[web.1]: 125.17.149.142 - - [06/Jun/2011 23:33:58] "GET /js/jqBarGraph.1.1.js HTTP/1.1" 200 9249 0.0003
+2011-06-07T06:33:58+00:00 heroku[router]: GET stn-scraping.heroku.com/js/stn.js dyno=web.1 queue=0 wait=0ms service=4ms bytes=1025
+2011-06-07T06:33:58+00:00 heroku[router]: GET stn-scraping.heroku.com/js/jqBarGraph.1.1.js dyno=web.1 queue=0 wait=0ms service=3ms bytes=9249
+2011-06-07T06:33:58+00:00 heroku[router]: GET stn-scraping.heroku.com/js/jquery-1.6.1.js dyno=web.1 queue=0 wait=0ms service=23ms bytes=234995
+2011-06-06T23:33:58-07:00 heroku[nginx]: GET /js/stn.js HTTP/1.1 | 125.17.149.142 | 1055 | http | 200
+2011-06-06T23:33:58-07:00 heroku[nginx]: GET /js/jqBarGraph.1.1.js HTTP/1.1 | 125.17.149.142 | 3449 | http | 200
+2011-06-07T06:34:02+00:00 app[web.1]: 125.17.149.142 - - [06/Jun/2011 23:34:02] "GET /favicon.ico HTTP/1.1" 404 18 0.0005
+2011-06-07T06:34:02+00:00 heroku[router]: GET stn-scraping.heroku.com/favicon.ico dyno=web.1 queue=0 wait=0ms service=4ms bytes=18
+2011-06-07T06:34:02+00:00 app[web.1]: 125.17.149.142 - - [06/Jun/2011 23:34:02] "GET /favicon.ico HTTP/1.1" 404 18 0.0004
+2011-06-07T06:34:02+00:00 heroku[router]: GET stn-scraping.heroku.com/favicon.ico dyno=web.1 queue=0 wait=0ms service=1ms bytes=221
+2011-06-06T23:34:03-07:00 heroku[nginx]: GET /favicon.ico HTTP/1.1 | 125.17.149.142 | 251 | http | 404
+2011-06-06T23:34:03-07:00 heroku[nginx]: GET /favicon.ico HTTP/1.1 | 125.17.149.142 | 252 | http | 404
+2011-06-07T06:38:36+00:00 app[web.1]: 187.104.208.31 - - [06/Jun/2011 23:38:36] "GET / HTTP/1.1" 200 3257 0.0007
+2011-06-07T06:38:36+00:00 heroku[router]: GET stn-scraping.heroku.com/ dyno=web.1 queue=0 wait=0ms service=2ms bytes=3438
+2011-06-07T06:38:37+00:00 app[web.1]: 187.104.208.31 - - [06/Jun/2011 23:38:37] "GET /js/jqBarGraph.1.1.js HTTP/1.1" 200 9249 0.0005
+2011-06-07T06:38:37+00:00 heroku[router]: GET stn-scraping.heroku.com/js/jqBarGraph.1.1.js dyno=web.1 queue=0 wait=0ms service=3ms bytes=9249
+2011-06-07T06:38:37+00:00 app[web.1]: 187.104.208.31 - - [06/Jun/2011 23:38:37] "GET /js/jquery-1.6.1.js HTTP/1.1" 200 234995 0.0005
+2011-06-07T06:38:37+00:00 app[web.1]: 187.104.208.31 - - [06/Jun/2011 23:38:37] "GET /css/stn.css HTTP/1.0" 200 172 0.0003
+2011-06-07T06:38:37+00:00 app[web.1]: 187.104.208.31 - - [06/Jun/2011 23:38:37] "GET /js/stn.js HTTP/1.1" 200 786 0.0003
+2011-06-07T06:38:37+00:00 heroku[router]: GET stn-scraping.heroku.com/css/stn.css dyno=web.1 queue=0 wait=0ms service=2ms bytes=397
+2011-06-07T06:38:37+00:00 heroku[router]: GET stn-scraping.heroku.com/js/stn.js dyno=web.1 queue=0 wait=0ms service=2ms bytes=786
+2011-06-07T06:38:37+00:00 heroku[router]: GET stn-scraping.heroku.com/js/jquery-1.6.1.js dyno=web.1 queue=0 wait=0ms service=16ms bytes=235237
+2011-06-06T23:38:37-07:00 heroku[nginx]: GET / HTTP/1.1 | 187.104.208.31 | 1221 | http | 200
+2011-06-06T23:38:37-07:00 heroku[nginx]: GET /js/jqBarGraph.1.1.js HTTP/1.1 | 187.104.208.31 | 3444 | http | 200
+2011-06-07T06:38:38+00:00 app[web.1]: 187.104.208.31 - - [06/Jun/2011 23:38:38] "GET /favicon.ico HTTP/1.1" 404 18 0.0005
+2011-06-07T06:38:38+00:00 heroku[router]: GET stn-scraping.heroku.com/favicon.ico dyno=web.1 queue=0 wait=0ms service=4ms bytes=221
+2011-06-06T23:38:38-07:00 heroku[nginx]: GET /js/jquery-1.6.1.js HTTP/1.1 | 187.104.208.31 | 70862 | http | 200
+2011-06-06T23:38:38-07:00 heroku[nginx]: GET /favicon.ico HTTP/1.1 | 187.104.208.31 | 247 | http | 404

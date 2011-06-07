@@ -6,7 +6,7 @@ function fpe_get() {
 	var ano = document.forms[0].ano.value;
 	
 	if ((uf != '' || uf != undefined) && (ano != '' || ano != undefined)) {
-		url = 'http://localhost:4567/fpe/get?uf=' + uf + '&ano=' + ano + '&json=true'
+		url = 'http://stn-mashup.heroku.com/fpe/get?uf=' + uf + '&ano=' + ano + '&json=true'
 		var json_txt = $.ajax({
 		    type: 'GET',
 		    url: url,
