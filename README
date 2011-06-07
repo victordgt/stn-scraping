@@ -30,6 +30,9 @@ git push heroku master
 #ADICIONAR APLICAÇÃO NO HEROKU
 git remote add heroku git@heroku.com:stn-scraping.git
 
+#VER LOGS NO HEROKU
+heroku logs
+
 #EXECUTAR A APLICAÇÃO DO SINATRA
 ruby -rubygems application.rb
 
