@@ -1,0 +1,10 @@
+  .cabecalho {
+    border: solid 1px gray;
+    background-color: DodgerBlue;
+    padding: 0.1em;
+  }
+
+  .borda_div {
+	border: 1px solid;
+	padding: 30px 30px 30px 30px; 
+  }

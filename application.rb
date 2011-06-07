@@ -2,24 +2,42 @@ require 'sinatra'
 require 'lib/util'
 require 'lib/fpe'
 require 'lib/fpm'
-require 'googlecharts'
+require 'json'
+require 'builder'
 
-
-get '/fpe' do
-	teste = FPE.new
-	teste.recupera_por_estado('DF', '2007')
+get '/fpe/get' do
+	fpe = FPE.new
+	uf = params[:uf]
+	ano = params[:ano]
+	json = params[:json]
+	
+	change_content_type(json)
+	
+	fpe.recupera_por_estado(uf, ano, json)
 end
 
-get '/fpm' do
-  teste = FPM.new
-  teste.recupera_por_municipio('SP','7107' '2007')  
+get '/fpm/get' do
+  fpm = FPM.new
+  uf = params[:uf]
+  municipio = params[:municipio]
+  ano = params[:ano]  
+  json = params[:json]
+  
+  change_content_type(json)
+  fpm.recupera_por_municipio(uf, municipio, ano, json)  
 end  
 
 
 get '/' do
-  teste = FPE.new
-  @dados = teste.recupera_por_estado('DF', '2007')
 	erb :"index"
 end
 
+
+def change_content_type(json)
+  if json == 'true'
+    content_type :json
+  else 
+    content_type :xml
+  end   
+end
 

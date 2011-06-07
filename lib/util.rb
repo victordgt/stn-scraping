@@ -3,6 +3,7 @@ require 'uri'
 require 'nokogiri'
 
 class UtilSTN
+  
   def recupera_pagina_fpe(estado, ano)
     #REQUISICAO POST PARA PAGINA DE TRANSFERENCIAS CONSTITUCIONAIS DOS ESTADOS
     res = Net::HTTP.post_form(URI.parse('http://www.stn.fazenda.gov.br/estados_municipios/estados.asp'),
@@ -37,24 +38,4 @@ class UtilSTN
     doc = Nokogiri::HTML(html)
     doc.xpath(caminho)   
   end
-  
-  
-  def array_meses(numeros)
-    dados = 
-    {
-     :JAN => numeros[0],
-     :FEV => numeros[1],
-     :MAR => numeros[2],
-     :ABR => numeros[3],
-     :MAI => numeros[4],
-     :JUN => numeros[5],
-     :JUL => numeros[6],
-     :AGO => numeros[7],
-     :SET => numeros[8],
-     :OUT => numeros[9],
-     :NOV => numeros[10],
-     :DEZ => numeros[11]
-    }    
-  end
-   
 end

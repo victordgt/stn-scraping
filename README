@@ -9,8 +9,6 @@ git config -global user.mail emailusuariogithub
 #ENVIAR PARA O GITHUB
 git push -u origin master
 
-#FAZER O DEPLOY NO HEROKU
-git push heroku master
 
 #INSTALAR GEMS
 gem install nokogiri
@@ -19,8 +17,6 @@ gem install json
 gem install googlecharts
 gem install heroku
 
-#EXECUTAR A APLICAÇÃO DO SINATRA
-ruby -rubygems application.rb
 
 #LOGIN NO HEROKU
 heroku login
@@ -28,5 +24,25 @@ heroku login
 #ADICIONAR CHAVES ARMAZENADAS NO DIRETÓRIO SSH
 heroku keys:add
 
+#FAZER O DEPLOY NO HEROKU
+git push heroku master
+
 #ADICIONAR APLICAÇÃO NO HEROKU
 git remote add heroku git@heroku.com:stn-scraping.git
+
+#EXECUTAR A APLICAÇÃO DO SINATRA
+ruby -rubygems application.rb
+
+#APLICAÇÃO PUBLICADA
+http://stn-scraping.heroku.com
+
+#EXEMPLO DE CHAMADA REST COM RETORNO EM JSON
+http://stn-scraping.heroku.com/fpe/get?uf=DF&ano=2010&json=true
+
+#EXEMPLO DE CLIENT COM JAVASCRIPT, FAZENDO UMA CHAMADA REST
+http://stn-scraping.heroku.com/
+
+#EXEMPLO DE CHAMADA REST COM RETORNO EM XML
+http://stn-scraping.heroku.com/fpm/get?uf=DF&municipio=9701&ano=2010&json=false
+
+

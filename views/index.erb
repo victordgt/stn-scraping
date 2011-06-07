@@ -1,51 +1,93 @@
 <html>
   <head>
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript">
-      google.load("visualization", "1", {packages:["corechart"]});
-      google.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Ano');
-        data.addColumn('number', 'Valor Mensal');
+	<link rel="stylesheet" type="text/css" href="css/stn.css" />
 
-        data.addRows(12);
-        data.setValue(0, 0, 'Jan');
-        data.setValue(0, 1, <%=@dados[:JAN]%>);
-        data.setValue(1, 0, 'Fev');
-        data.setValue(1, 1, <%=@dados[:FEV]%>);
-        data.setValue(2, 0, 'Mar');
-        data.setValue(2, 1, <%=@dados[:MAR]%>);
-        data.setValue(3, 0, 'Abr');
-        data.setValue(3, 1, <%=@dados[:ABR]%>);
-        data.setValue(4, 0, 'Mai');
-        data.setValue(4, 1, <%=@dados[:MAI]%>);
-        data.setValue(5, 0, 'Jun');
-        data.setValue(5, 1, <%=@dados[:JUN]%>);
-        data.setValue(6, 0, 'Jul');
-        data.setValue(6, 1, <%=@dados[:JUL]%>);
-        data.setValue(7, 0, 'Ago');
-        data.setValue(7, 1, <%=@dados[:AGO]%>);
-        data.setValue(8, 0, 'Set');
-        data.setValue(8, 1, <%=@dados[:SET]%>);
-        data.setValue(9, 0, 'Out');
-        data.setValue(9, 1, <%=@dados[:OUT]%>);
-        data.setValue(10, 0, 'Nov');
-        data.setValue(10, 1, <%=@dados[:NOV]%>);
-        data.setValue(11, 0, 'Dez');
-        data.setValue(11, 1, <%=@dados[:DEZ]%>);
+	<script type="text/javascript" src="js/jquery-1.6.1.js"></script>
+	<script type="text/javascript" src="js/jqBarGraph.1.1.js"></script>
+    <script type="text/javascript" src="js/stn.js"></script>
 
-
-
-        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
-        chart.draw(data, {width: 800, height: 500, title: 'Fundo de Participação dos Estados',
-                          hAxis: {title: 'Ano', titleTextStyle: {color: 'blue'}}
-                         });
-      }
-    </script>
   </head>
 
   <body>
-    <div id="chart_div"></div>
+	<h2 class="cabecalho">Fundo de Participa&ccedil;&atilde;o dos Estados</h2>
+	<table cellspacing="0" cellpadding="0" border="0">
+	<tbody>
+		<form name="form1" action="#">
+		<tr>
+	    <td>
+			<b>Estado:</b><br>
+			<select style="width: 200" name="uf" size="1">
+			 	<option value="%"></option>
+		        <option value="AC">Acre&nbsp;</option>
+		        <option value="AL">Alagoas&nbsp;</option>
+		        <option value="AP">Amapá&nbsp;</option>
+		        <option value="AM">Amazonas&nbsp;</option>
+		        <option value="BA">Bahia&nbsp;</option>
+		        <option value="CE">Ceará&nbsp;</option>
+		        <option value="DF" selected>Distrito Federal&nbsp;</option>
+		        <option value="ES">Espírito Santo&nbsp;</option>
+		        <option value="GO">Goiás&nbsp;</option>
+		        <option value="MA">Maranhão&nbsp;</option>
+		        <option value="MT">Mato Grosso&nbsp;</option>
+		        <option value="MS">Mato Grosso do Sul&nbsp;</option>
+		        <option value="MG">Minas Gerais&nbsp;</option>
+		        <option value="PA">Pará&nbsp;</option>
+		        <option value="PB">Paraíba&nbsp;</option>
+		        <option value="PR">Paraná&nbsp;</option>
+		        <option value="PE">Pernambuco&nbsp;</option>
+		        <option value="PI">Piauí&nbsp;</option>
+		        <option value="RJ">Rio de Janeiro&nbsp;</option>
+		        <option value="RN">Rio Grande do Norte&nbsp;</option>
+		        <option value="RS">Rio Grande do Sul&nbsp;</option>
+		        <option value="RO">Rondônia&nbsp;</option>
+		        <option value="RR">Roraima&nbsp;</option>
+		        <option value="SC">Santa Catarina&nbsp;</option>
+		        <option value="SP">São Paulo&nbsp;</option>
+		        <option value="SE">Sergipe&nbsp;</option>
+		        <option value="TO">Tocantins&nbsp;</option>
+	      	</select>
+			</td>
+			<tr>
+			<td>
+			<b>Ano:</b><br>
+			<select style="width: 200" name="ano" size="1">
+		        <option value="%"></option>
+		        <option value="1997">1997&nbsp;</option>
+		        <option value="1998">1998&nbsp;</option>
+		        <option value="1999">1999</option>
+		        <option value="2000">2000</option>
+		        <option value="2001">2001</option>
+		        <option value="2002">2002</option>
+		        <option value="2003">2003</option>
+				<option value="2004">2004</option>
+				<option value="2005">2005</option>
+				<option value="2006">2006</option>
+				<option value="2007">2007</option>
+				<option value="2008">2008</option>		
+				<option value="2009">2009</option>
+				<option value="2010" selected>2010</option>
+				<option value="2011">2011</option>
+			</select>
+			</td>
+			</tr>
+			<tr>
+				<td>	
+				<br>
+				<input type="button" value="Enviar" onclick="fpe_get();"/>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<br>
+					<div id="simpleGraph"> 
+					</div>
+				</td>
+			</tr>
+		</form>
+	</tbody>
+	</table>
+    
+	<h3>Fonte:&nbsp;<a href="http://tesouro.fazenda.gov.br/">Secretaria do Tesouro Nacional</a></h3>
   </body>
 </html>

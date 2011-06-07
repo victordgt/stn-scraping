@@ -1,5 +1,8 @@
 require 'test/unit'
 require '../lib/util'
+require 'json'
+require 'json/ext'
+
 
  
 class TestUtil < Test::Unit::TestCase
@@ -27,14 +30,5 @@ class TestUtil < Test::Unit::TestCase
     dados = util.parsing_pagina(pagina, '//td[@class="middlecell" and @align="right"]')
     assert_equal('25.614.115,17', dados[0].text)
     assert_equal(12, dados.size)
-  end  
-  
-  #RECUPERA UMA PÁGINA E VERIFICA UMA EXPRESSAO XPATH PARA RECUPERAR VALORES MENSAIS DE REPASSES PARA UM MUNICIPIO
-  #def test_parsing_pagina_fpm
-    #util = UtilSTN.new
-    #html = util.recupera_pagina_fpm('SP', '7107', '2007')  
-    #numeros = util.parsing_pagina_fpm(html)
-    #assert_equal(8001271.74, numeros[0])
-    #assert_equal(12, numeros.size)
-  #end     
+  end   
 end
